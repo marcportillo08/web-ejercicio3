@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --fondo-header-footer: rgb(84, 120, 193);
+  --texto-header-footer: white;
+  --fondo-section: rgba(210, 223, 251, 0.8);
+  --texto-section: rgb(73, 105, 169);
+  --fondo-hover: rgb(10, 15, 24);
+  --texto-hover: white;
+  --texto-enlace-activo: black;
+  --sombra: rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem; 
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: var(--fondo-header-footer);
+  color: var(--texto-header-footer);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+section {
+  background-color: var(--fondo-section);
+  color: var(--texto-section);
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px var(--sombra);
+}
+
+article {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+section,
+article {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section:first-of-type:hover,
+article:hover {
+  background-color: var(--fondo-hover);
+  color: var(--texto-hover);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:active {
+  color: var(--texto-enlace-activo);
+}
+
+span {
+  font-weight: bold;
+}
+
+article:last-of-type > p {
+  font-style: italic;
+}
